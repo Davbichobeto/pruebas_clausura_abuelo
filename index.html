@@ -26,20 +26,50 @@
         .detail-card { background: #11141a; padding: 15px; margin: 20px; border-radius: 10px; border: 1px solid #c5a059; }
         .details-table { width: 100%; border-collapse: collapse; font-size: 11px; margin-top: 10px; color: #fff; }
         .details-table th, .details-table td { border: 1px solid #333; padding: 5px; text-align: center; }
+
+        /* AQUÍ ESTÁ EL PASO 1: LOS NUEVOS ESTILOS INSERTADOS JUSTO ANTES DE CERRAR <style> */
+        .title-box { border: 2px solid #c5a059; border-radius: 15px; padding: 20px 10px; text-align: center; margin-bottom: 15px; background: rgba(197, 160, 89, 0.05); box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+        .title-box h1 { color: #c5a059; font-size: 28px; font-weight: 900; text-transform: uppercase; font-family: 'Arial Black', Impact, sans-serif; letter-spacing: 1.5px; margin-bottom: 15px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); }
+        .info-line { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 13px; margin-bottom: 8px; color: #e0e0e0; }
+        .icon-svg { width: 18px; height: 18px; fill: #c5a059; }
+        .stats-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; margin: 20px 0; }
+        .stat-card { background: #11141a; border: 1px solid #c5a059; border-radius: 8px; padding: 12px 5px; text-align: center; width: 30%; flex-grow: 1; box-shadow: 0 2px 5px rgba(0,0,0,0.3); }
+        .stat-card.total { width: 100%; flex-grow: 0; background: #c5a059; border-color: #c5a059; }
+        .stat-card.total .s-val, .stat-card.total .s-lbl { color: #000; }
+        .s-val { display: block; font-size: 20px; font-weight: 900; color: #fff; margin-bottom: 3px; font-family: 'Arial Black', sans-serif;}
+        .s-lbl { display: block; font-size: 9px; color: #c5a059; text-transform: uppercase; font-weight: bold; }
     </style>
 </head>
 <body>
 <div class="container">
+    
     <div id="home-screen" class="screen active">
-        <div class="header-card"><h1>Operativo FIFA 26</h1><p style="font-size: 16px; margin-top:5px;">8 de Junio 2026 | Parque Fundidora</p></div>
+        <div class="title-box">
+            <h1>Operativo FIFA 26</h1>
+            <div class="info-line">
+                <svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                8 de Junio 2026
+            </div>
+            <div class="info-line">
+                <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Parque Fundidora
+            </div>
+        </div>
+
         <img src="poster.jpg" alt="Póster" class="poster-img">
+
+        <div class="stats-grid">
+            <div class="stat-card total"><span class="s-val">466</span><span class="s-lbl">Total de Elementos</span></div>
+            <div class="stat-card"><span class="s-val">18</span><span class="s-lbl">Mando</span></div>
+            <div class="stat-card"><span class="s-val">142</span><span class="s-lbl">Fuerza Civil</span></div>
+            <div class="stat-card"><span class="s-val">250</span><span class="s-lbl">Cadetes</span></div>
+            <div class="stat-card"><span class="s-val">50</span><span class="s-lbl">GAE</span></div>
+            <div class="stat-card"><span class="s-val">5</span><span class="s-lbl">CRP</span></div>
+            <div class="stat-card"><span class="s-val">3</span><span class="s-lbl">K9</span></div>
+        </div>
+
         <a href="#" class="main-menu-btn" onclick="showScreen('directory-screen')">Directorio</a>
         <a href="#" class="main-menu-btn" onclick="showScreen('deployment-screen')">Despliegue</a>
-        <table class="summary-table">
-            <tr><td colspan="3">TOTAL 466</td></tr>
-            <tr><td>Mando: 18</td><td>F.C: 142</td><td>Cad: 250</td></tr>
-            <tr><td>GAE: 50</td><td>CRP: 5</td><td>K9: 3</td></tr>
-        </table>
     </div>
 
     <div id="directory-screen" class="screen">
