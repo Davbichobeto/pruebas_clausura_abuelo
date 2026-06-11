@@ -63,14 +63,15 @@
 
         <img src="posteri.jpg" alt="Póster" class="posteri-img">
 
-        <div class="stats-grid">
-            <div class="stat-card total"><span class="s-val">466</span><span class="s-lbl">Total de Elementos</span></div>
-            <div class="stat-card"><span class="s-val">18</span><span class="s-lbl">Mando</span></div>
-            <div class="stat-card"><span class="s-val">142</span><span class="s-lbl">Fuerza Civil</span></div>
-            <div class="stat-card"><span class="s-val">250</span><span class="s-lbl">Cadetes</span></div>
-            <div class="stat-card"><span class="s-val">50</span><span class="s-lbl">GAE</span></div>
-            <div class="stat-card"><span class="s-val">5</span><span class="s-lbl">CRP</span></div>
-            <div class="stat-card"><span class="s-val">3</span><span class="s-lbl">K9</span></div>
+        <div class="stats-grid" style="display: grid; grid-template-columns: repeat(12, 1fr); gap: 10px; padding: 10px;">
+            <div class="stat-card total" style="grid-column: span 4; background: #264653; color: white;"><span class="s-val">529</span><span class="s-lbl">Total Elementos</span></div>
+            <div class="stat-card" style="grid-column: span 4; background: #e76f51; color: white;"><span class="s-val">18</span><span class="s-lbl">Mandos</span></div>
+            <div class="stat-card" style="grid-column: span 4; background: #2a9d8f; color: white;"><span class="s-val">178</span><span class="s-lbl">Fuerza Civil</span></div>
+            
+            <div class="stat-card" style="grid-column: span 3;"><span class="s-val">253</span><span class="s-lbl">Cadetes (K9 inc.)</span></div>
+            <div class="stat-card" style="grid-column: span 3;"><span class="s-val">50</span><span class="s-lbl">GAE</span></div>
+            <div class="stat-card" style="grid-column: span 3;"><span class="s-val">30</span><span class="s-lbl">Adminis</span></div>
+            <div class="stat-card" style="grid-column: span 3;"><span class="s-val">4</span><span class="s-lbl">CRP</span></div>
         </div>
 
         <a href="#" class="main-menu-btn" onclick="showScreen('directory-screen')">Directorio</a>
