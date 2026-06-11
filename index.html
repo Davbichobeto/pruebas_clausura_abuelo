@@ -109,26 +109,53 @@
     </div>
 
     <div id="deployment-screen" class="screen">
-    <div style="padding: 10px;">
-        <a href="#" class="back-btn" onclick="showScreen('home-screen')">Volver al Inicio</a>
-        <a href="#" class="area-btn" style="background:#264653;" data-name="CENTRO DE MANDO" data-map="centro_de_mando.jpg" data-pdf="centro_de_mando.pdf" data-mando="1" data-fc="11" data-cadetes="0" data-gae="0" data-crp="0" data-total="12" data-mando-name="J. RUIZ FELIX" onclick="showDetail(this)">Centro de Mando</a>
-        <a href="#" class="area-btn" style="background:#2a9d8f;" data-name="UCM" data-map="centro_de_mando.jpg" data-pdf="ucm.pdf" data-mando="1" data-fc="100" data-cadetes="20" data-gae="0" data-crp="0" data-total="121" data-mando-name="FIDEL DIAZ RUIZ" onclick="showDetail(this)">UCM</a>
-        <a href="#" class="area-btn" style="background:#e9c46a; color:#000;" data-name="TECNOLOGÍA" data-map="centro_de_mando.jpg" data-pdf="tecnologia.pdf" data-mando="1" data-fc="6" data-cadetes="0" data-gae="0" data-crp="0" data-total="7" data-mando-name="BENJAMÍN LÓPEZ" onclick="showDetail(this)">Tecnología</a>
-        <a href="#" class="area-btn" style="background:#f4a261;" data-name="ESCENARIO" data-map="escenario.jpg" data-pdf="escenario.pdf" data-mando="1" data-fc="0" data-cadetes="35" data-gae="0" data-crp="0" data-total="36" data-mando-name="DAVID QUIJAS" onclick="showDetail(this)">Escenario</a>
-        <a href="#" class="area-btn" style="background:#e76f51;" data-name="CAMERINOS" data-map="escenario.jpg" data-pdf="camerino.pdf" data-mando="1" data-fc="0" data-cadetes="5" data-gae="5" data-crp="0" data-total="11" data-mando-name="LUIS GARCIA" onclick="showDetail(this)">Camerinos</a>
-        <a href="#" class="area-btn" style="background:#6b705c;" data-name="VIP" data-map="zonas_generales.jpg" data-pdf="vip.pdf" data-mando="1" data-fc="0" data-cadetes="5" data-gae="5" data-crp="0" data-total="11" data-mando-name="SOFIA ROBLES" onclick="showDetail(this)">VIP</a>
-        <a href="#" class="area-btn" style="background:#a5a58d; color:#000;" data-name="PREFERENCIAL" data-map="zonas_generales.jpg" data-pdf="preferencial.pdf" data-mando="1" data-fc="0" data-cadetes="10" data-gae="5" data-crp="0" data-total="16" data-mando-name="JUAN SANTA CRUZ" onclick="showDetail(this)">Preferencial</a>
-        <a href="#" class="area-btn" style="background:#b7094c;" data-name="GENERAL" data-map="zonas_generales.jpg" data-pdf="general.pdf" data-mando="2" data-fc="0" data-cadetes="35" data-gae="0" data-crp="0" data-total="37" data-mando-name="LILIANA RAMOS" onclick="showDetail(this)">General</a>
-        <a href="#" class="area-btn" style="background:#a01a58;" data-name="PERIMETRAL NORTE" data-map="perimetral_norte.jpg" data-pdf="perimetral_norte.pdf" data-mando="2" data-fc="0" data-cadetes="35" data-gae="0" data-crp="0" data-total="37" data-mando-name="ENRIQUE GALVÁN" onclick="showDetail(this)">Perimetral Norte</a>
-        <a href="#" class="area-btn" style="background:#892b64;" data-name="PERIMETRAL SUR" data-map="perimetral_sur.jpg" data-pdf="perimetral_sur.pdf" data-mando="2" data-fc="0" data-cadetes="35" data-gae="0" data-crp="0" data-total="37" data-mando-name="JENNY MORAN" onclick="showDetail(this)">Perimetral Sur</a>
-        <a href="#" class="area-btn" style="background:#723c70;" data-name="ACCESO 4" data-map="accesos_evento.jpg" data-pdf="acceso_4.pdf" data-mando="1" data-fc="0" data-cadetes="10" data-gae="10" data-crp="0" data-total="21" data-mando-name="JORGE CARRILLO" onclick="showDetail(this)">Acceso 4</a>
-        <a href="#" class="area-btn" style="background:#5c4d7d;" data-name="ACCESO PISTA" data-map="accesos_evento.jpg" data-pdf="acceso_pista.pdf" data-mando="1" data-fc="0" data-cadetes="10" data-gae="10" data-crp="0" data-total="21" data-mando-name="MAURICIO MOLINA" onclick="showDetail(this)">Acceso Pista</a>
-        <a href="#" class="area-btn" style="background:#455e89;" data-name="ACCESO 3 ARENA" data-map="accesos_evento.jpg" data-pdf="acceso_3.pdf" data-mando="1" data-fc="0" data-cadetes="10" data-gae="0" data-crp="0" data-total="11" data-mando-name="JUAN CARLOS DÍAZ" onclick="showDetail(this)">Acceso 3 Arena</a>
-        <a href="#" class="area-btn" style="background:#2e6f95;" data-name="PERIFERIA" data-map="periferia.jpg" data-pdf="periferia.pdf" data-mando="1" data-fc="25" data-cadetes="0" data-gae="0" data-crp="5" data-total="31" data-mando-name="HUGO SÁNCHEZ" onclick="showDetail(this)">Periferia</a>
-        <a href="#" class="area-btn" style="background:#1780a1;" data-name="ACCESO 5" data-map="acceso_5.jpg" data-pdf="acceso_5.pdf" data-mando="1" data-fc="0" data-cadetes="5" data-gae="5" data-crp="0" data-total="11" data-mando-name="JAIME ORTIZ" onclick="showDetail(this)">Acceso 5</a>
-        <a href="#" class="area-btn" style="background:#0091ad;" data-name="BINOMIOS" data-map="paseo_santa_lucia.jpg" data-pdf="binomios_santa_lucia.pdf" data-mando="1" data-fc="0" data-cadetes="35" data-gae="10" data-crp="0" data-total="46" data-mando-name="AARON TREJO" onclick="showDetail(this)">Binomios Santa Lucia</a>
+        <div style="padding: 10px;">
+            <a href="#" class="back-btn" onclick="showScreen('home-screen')">Volver al Inicio</a>
+            
+            <a href="#" class="area-btn" style="background:#264653;" data-name="CENTRO DE MANDO" data-map="centro_de_mando.jpg" data-pdf="centro_de_mando.pdf" data-mando="5" data-fc="11" data-cadetes="0" data-gae="0" data-crp="0" data-total="16" data-mando-name="JUAN CARLOS CORONA" onclick="showDetail(this)">Centro de Mando</a>
+            
+            <a href="#" class="area-btn" style="background:#1d3557;" data-name="APOYO SUPERVISIÓN" data-map="centro_de_mando.jpg" data-pdf="apoyo_supervision.pdf" data-mando="1" data-fc="5" data-cadetes="0" data-gae="0" data-crp="0" data-total="6" data-mando-name="LUIS ANTONIO GARCIAS" onclick="showDetail(this)">Apoyo Supervisión</a>
+
+            <a href="#" class="area-btn" style="background:#2a9d8f;" data-name="UCM" data-map="centro_de_mando.jpg" data-pdf="ucm.pdf" data-mando="1" data-fc="100" data-cadetes="20" data-gae="0" data-crp="0" data-total="121" data-mando-name="FIDEL RUÍZ DIAZ" onclick="showDetail(this)">UCM</a>
+            
+            <a href="#" class="area-btn" style="background:#3a86c8;" data-name="SECTOR C Y D PARQUE" data-map="zonas_generales.jpg" data-pdf="sector_cd.pdf" data-mando="1" data-fc="15" data-cadetes="15" data-gae="0" data-crp="0" data-total="31" data-mando-name="ISRAEL TORRES" onclick="showDetail(this)">Sector C y D Parque</a>
+            
+            <a href="#" class="area-btn" style="background:#723c70;" data-name="CHECK POINT ADOLFO PRIETO" data-map="accesos_evento.jpg" data-pdf="acceso_4.pdf" data-mando="1" data-fc="0" data-cadetes="10" data-gae="10" data-crp="0" data-total="21" data-mando-name="JORGE CARRILLO" onclick="showDetail(this)">CP Adolfo Prieto</a>
+            
+            <a href="#" class="area-btn" style="background:#b7094c;" data-name="GENERAL" data-map="zonas_generales.jpg" data-pdf="general.pdf" data-mando="1" data-fc="0" data-cadetes="35" data-gae="0" data-crp="0" data-total="36" data-mando-name="LILIANA RAMOS" onclick="showDetail(this)">General</a>
+            
+            <a href="#" class="area-btn" style="background:#4a4e69;" data-name="SECTOR A Y B PARQUE" data-map="zonas_generales.jpg" data-pdf="sector_ab.pdf" data-mando="1" data-fc="10" data-cadetes="20" data-gae="0" data-crp="0" data-total="31" data-mando-name="ALMA SARAÍ MALPICA" onclick="showDetail(this)">Sector A y B Parque</a>
+            
+            <a href="#" class="area-btn" style="background:#6b705c;" data-name="PREFERENTE" data-map="zonas_generales.jpg" data-pdf="vip.pdf" data-mando="1" data-fc="0" data-cadetes="5" data-gae="5" data-crp="0" data-total="11" data-mando-name="SOFIA ROBLES" onclick="showDetail(this)">Preferente</a>
+            
+            <a href="#" class="area-btn" style="background:#f4a261;" data-name="ESCENARIO" data-map="escenario.jpg" data-pdf="escenario.pdf" data-mando="1" data-fc="0" data-cadetes="35" data-gae="0" data-crp="0" data-total="36" data-mando-name="DAVID QUIJAS" onclick="showDetail(this)">Escenario</a>
+            
+            <a href="#" class="area-btn" style="background:#2e6f95;" data-name="PERIMETRAL" data-map="periferia.jpg" data-pdf="periferia.pdf" data-mando="1" data-fc="25" data-cadetes="0" data-gae="0" data-crp="5" data-total="31" data-mando-name="HAROLD MARTÍNEZ" onclick="showDetail(this)">Perimetral</a>
+            
+            <a href="#" class="area-btn" style="background:#a5a58d; color:#000;" data-name="PREFERENTE PIT" data-map="zonas_generales.jpg" data-pdf="preferencial.pdf" data-mando="1" data-fc="0" data-cadetes="10" data-gae="5" data-crp="0" data-total="16" data-mando-name="JUAN SANTA CRUZ" onclick="showDetail(this)">Preferente Pit</a>
+            
+            <a href="#" class="area-btn" style="background:#5c4d7d;" data-name="CHECK POINT HIELO - TOLDO" data-map="accesos_evento.jpg" data-pdf="acceso_pista.pdf" data-mando="1" data-fc="0" data-cadetes="10" data-gae="10" data-crp="0" data-total="21" data-mando-name="JESÚS AGUILAR" onclick="showDetail(this)">CP Hielo - Toldo</a>
+            
+            <a href="#" class="area-btn" style="background:#455e89;" data-name="ACCESO 3 STAFF" data-map="accesos_evento.jpg" data-pdf="acceso_3.pdf" data-mando="1" data-fc="0" data-cadetes="10" data-gae="0" data-crp="0" data-total="11" data-mando-name="JUAN CARLOS DÍAZ" onclick="showDetail(this)">Acceso 3 Staff</a>
+            
+            <a href="#" class="area-btn" style="background:#1780a1;" data-name="ACCESO 5 CERRADO" data-map="acceso_5.jpg" data-pdf="acceso_5.pdf" data-mando="1" data-fc="0" data-cadetes="5" data-gae="5" data-crp="0" data-total="11" data-mando-name="G. REYES GONZALEZ" onclick="showDetail(this)">Acceso 5 Cerrado</a>
+            
+            <a href="#" class="area-btn" style="background:#a01a58;" data-name="VALLAS NORTE" data-map="perimetral_norte.jpg" data-pdf="perimetral_norte.pdf" data-mando="1" data-fc="0" data-cadetes="35" data-gae="0" data-crp="0" data-total="36" data-mando-name="CINDY RODRÍGUEZ" onclick="showDetail(this)">Vallas Norte</a>
+            
+            <a href="#" class="area-btn" style="background:#892b64;" data-name="VALLAS SUR" data-map="perimetral_sur.jpg" data-pdf="perimetral_sur.pdf" data-mando="1" data-fc="0" data-cadetes="35" data-gae="0" data-crp="0" data-total="36" data-mando-name="JENNY MORAN" onclick="showDetail(this)">Vallas Sur</a>
+            
+            <a href="#" class="area-btn" style="background:#0091ad;" data-name="PASEO SANTA LUCIA" data-map="paseo_santa_lucia.jpg" data-pdf="binomios_santa_lucia.pdf" data-mando="1" data-fc="0" data-cadetes="35" data-gae="10" data-crp="0" data-total="46" data-mando-name="AARON TREJO" onclick="showDetail(this)">Paseo Santa Lucía</a>
+            
+            <a href="#" class="area-btn" style="background:#d90429;" data-name="CP PISTA - ACERO Y TOLDO LAGO" data-map="accesos_evento.jpg" data-pdf="cp_pista.pdf" data-mando="1" data-fc="10" data-cadetes="0" data-gae="0" data-crp="0" data-total="11" data-mando-name="MAURICIO MOLINA" onclick="showDetail(this)">CP Pista - Acero y Toldo</a>
+            
+            <a href="#" class="area-btn" style="background:#e07a5f;" data-name="TOLDOS CRISOL, BICICLETAS Y GRÚA" data-map="zonas_generales.jpg" data-pdf="toldos_crisol.pdf" data-mando="1" data-fc="10" data-cadetes="0" data-gae="0" data-crp="0" data-total="11" data-mando-name="JAIME ORTIZ" onclick="showDetail(this)">Toldos Crisol y Bicicletas</a>
+            
+            <a href="#" class="area-btn" style="background:#81b29a;" data-name="CP NAVE LEWIS TOLDO" data-map="accesos_evento.jpg" data-pdf="cp_nave_lewis.pdf" data-mando="1" data-fc="10" data-cadetes="0" data-gae="0" data-crp="0" data-total="11" data-mando-name="BRAYAN LÓPEZ" onclick="showDetail(this)">CP Nave Lewis Toldo</a>
+            
+            <a href="#" class="area-btn" style="background:#3d405b;" data-name="K-9" data-map="paseo_santa_lucia.jpg" data-pdf="k9.pdf" data-mando="1" data-fc="0" data-cadetes="0" data-gae="0" data-crp="0" data-total="4" data-mando-name="HORACIO RANGEL" onclick="showDetail(this)">Binomios K-9</a>
+
+        </div>
     </div>
-</div>
 
     <div id="detail-screen" class="screen">
         <div class="detail-card">
